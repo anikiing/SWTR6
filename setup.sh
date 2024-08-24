@@ -48,11 +48,11 @@ npx hardhat verify --network swisstronik --contract contracts/Hello_swtr.sol:Swi
 echo "Removing the private key from the .env file..."
 sed -i 's|PRIVATE_KEY="[^"]*"|PRIVATE_KEY=""|g' .env
 
+print_blue "Pushing these files to your github Repo link"
+git add . && git commit -m "Initial commit" && git push origin main
+echo
 # Final output
 echo ""
 echo "👍👍 ALL DONE 👍👍"
 echo ""
-echo "Credit to AnonID.TOP for laying the groundwork 👏👏"
-echo ""
-echo "Join my Telegram channel for more updates: https://t.me/CryptoBunkie"
-echo ""
+
